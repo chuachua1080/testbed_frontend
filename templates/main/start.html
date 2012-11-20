@@ -1,0 +1,20 @@
+{% extends "main/base.html" %}
+{% load i18n %}
+
+{% block content %}
+<h1>{% trans "Welcome to NicLab TestBed" %}</h1>
+<div style="position:relative;width:830px;height:320px">
+	<div style="position:absolute;left:0;top:0;width:520px;">
+		<p>{% trans "NicLab TestBed gives researchers the possibility to design and use virtual networking topologies consisting of devices and connectors." %}</p>
+		<img src="/static/example1.png"/>
+		<p>{% trans "Click on " %}<a href="">{% trans "Projects" %}</a> {% trans "to create your own project or on " %}<a href="">{% trans "Help" %}</a>{% trans " to get more information on using this tool." %}</p>
+	</div>
+	<div style="position:absolute;left:630px;top:0">
+		<form action="/login" method="post">
+		<input type="text" name="username" placeholder="User Name" style="float:right">
+		<input type="password" name="password" placeholder="Password" style="float:right">
+		<button type="submit" style="float:right">Sign In</button>
+		</form>
+	</div>
+</div>
+{% endblock %}

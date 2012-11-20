@@ -1,0 +1,7 @@
+{% extends "main/base.html" %}
+
+{% block content %}
+<h1>Error {{error.faultCode}}</h1>
+{{error.faultString}}
+<!-- %%%GLABNETMAN%%%ERROR%%%{{error.faultCode}}%%%{{error.faultString}}%%% -->
+{% endblock %}
