@@ -168,7 +168,7 @@ $("#host").draggable({
                                 });
                 
                         });
-			jsPlumb.addEndpoint("hst"+res,{uuid:"hst"+res,isSource:true,isTarget:false,maxConnections:10,uniqueEndpoint:true,anchor:["Perimeter",{shape:"circle"}]});
+			jsPlumb.addEndpoint("hst"+res,{uuid:"hst"+res,isSource:true,isTarget:false,maxConnections:10,uniqueEndpoint:true,connector:["Straight"],ConnectionsDetachable:false,});
         		jsPlumb.draggable("hst"+res);
 			}
 		});
@@ -227,7 +227,7 @@ $("#ovs").draggable({
                 		});
                 
         		});
-			jsPlumb.addEndpoint("ovs"+res,{uuid:"ovs"+res,isSource:true,isTarget:true,maxConnections:10,uniqueEndpoint:true});
+			jsPlumb.addEndpoint("ovs"+res,{uuid:"ovs"+res,isSource:true,isTarget:true,maxConnections:10,uniqueEndpoint:true,connector:["Straight"],ConnectionsDetachable:false,});
 			jsPlumb.draggable("ovs"+res);
 				
                         }
